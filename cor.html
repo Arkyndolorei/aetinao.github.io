@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head><title>cor</title>
+    <meta charset="UTF-8"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+
+.shantell-sans {
+  font-family: "Shantell Sans", cursive;
+
+  font-style: normal;
+  font-variation-settings:
+    "BNCE" 0,
+    "INFM" 0,
+    "SPAC" 0;
+}
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shadows-into-light-two-regular {
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+
+  font-style: normal;
+}
+body {
+  background-color: #f8f8f3;
+}
+.sec{
+  color:#3C6845;
+}
+.sec a {
+  all: unset;
+}
+.sec a:hover {
+  color:#1A2D1E;
+}
+header {
+  background-color: #86B5B3;
+  display:flex;
+}
+header img {
+  background-color: #86B5B3;
+  display:flex;
+  height:77px;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1200px;
+  height: 700px;
+  position: relative;
+  margin: auto;
+  top:50px;
+
+}
+.fade img {
+  border-radius:25px;
+  height: 600px;
+  object-fit:cover;
+}
+.mySlides {
+  display: none;
+}
+
+
+.text h1 {
+  color: white;
+  font-size: 120pt;
+  padding: 8px 12px;
+  position: absolute;
+  top: 435px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px #000000a8;
+  font-family: "Shadows Into Light", cursive;
+}
+.text h2 {
+  color: white;
+  font-size: 50pt;
+  padding: 8px 12px;
+  position: absolute;
+  top: 360px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px #000000a8;
+  font-family: "Shantell Sans", cursive;
+}
+.info h1 {
+  color: #2bbaa5;
+  font-size: 50pt;
+  padding: 8px 12px;
+  width: 100%;
+  text-shadow: 3px 2px #000000a8;
+  font-family: "Shadows Into Light Two", cursive;
+}
+.info p {
+  color: #193d40;
+  font-size: 15pt;
+  padding: 8px 12px;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.head {
+  text-align:left;
+  margin-left: 25px;
+  font-family: "Shadows Into Light Two", cursive;
+}
+.logo {
+  width: 100px;
+  height:70px;
+  float: left;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #faecb6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #f9a822;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 185px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #193d40;
+  font-size: 15pt;
+  padding: 8px 12px;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.spots a {
+  text-decoration: none;
+}
+.spots p {
+  text-align: center;
+  color: #193d40;
+  font-size: 20pt;
+  text-align: center;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  top:10px;
+}
+
+@media (max-width: 450px) {
+  .text h1 {font-size: 45pt;top: 290px;}
+  .text h2 {font-size:30pt;  top: 235px;}
+  .fade img {height: 200px;}
+  .info h1 {font-size:25pt;}
+  .info p, div.desc {font-size:12pt;}
+  .gallery img{width:300px;height:150px;object-fit:cover;}
+  .gallery {}
+}
+@media (max-width: 1024px) {
+  .gallery img{object-fit:cover;}
+}
+@media (max-width: 1920px) {
+  .gallery img{object-fit:cover;}
+}
+</style></head>
+<body>
+<header>
+  <div class="container py-3 d-flex justify-content-between align-content-center">
+    <img alt src="https://raw.githubusercontent.com/Arkyndolorei/SA/refs/heads/main/Pasyal.png" class="logo">
+    <h3 class="head">Pasyal Palawan</h3>
+    
+  </div>
+</header>
+  <nav class="sec">
+  <div class="container py-2 d-flex justify-content-between align-content-center">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <a href="author.html"><i class="fa-solid fa-users"></i></a>
+    <a href="destinations.html"><i class="fa-solid fa-location-dot"></i></a>
+    <a href="food.html"><i class="fa-solid fa-utensils"></i></a>
+  </div>
+</nav>
+  
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://www.travel-palawan.com/wp-content/uploads/2024/09/Coron-Banol-Beach-Palawan-Philippines-1024x683.jpeg" alt="cool" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="https://www.travel-palawan.com/wp-content/uploads/2024/09/Kayangan-Lake-Coron-Island-Palawan-Philippines-768x512.jpg" alt="cool" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://miro.medium.com/1*Bzg8hk5HD3PraFEZiksSeg.jpeg" alt="cool" style="width:100%">
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="info">
+      <h1>Coron: The Heart of Northern Palawan</h1>
+      <p>Coron is an island in the Calamian Islands in the province of Palawan, Philippines. It is located in Busuanga. There are beautiful and clean beaches and the best way to explore by foot. If you want to see something truly unique, we would suggest visiting Barracuda Lake. The best time to travel here is during summer or dry season which starts from December until March because the weather is good and there are many activities that you can do like swimming, snorkelling, kayaking etc. This island is a great and perfect place for families and groups of friends if you’re looking for a place to relax. Coron is also known as the “island of legends” because there are many stories about this island.
+It’s a beautiful place with white sand beaches, clear blue water and pristine coral reefs. It is also home to some of the most magnificent shipwrecks in the world, which are often explored by divers looking for adventure and a new experience.
+Coron Island is one of the most popular destinations in the Philippines for snorkelling, scuba diving and wreck dives. You can visit Coron Island on an island hopping tour or opt for an overnight stay at one of its resorts where you can enjoy swimming and surfing during the day then watch fireflies light up your room at night, kite flying and many more activities at these beaches!
+</p>
+  <h1>Discover Coron's Tourist Spots</h1>
+    </div>
+  <div class="spots">
+  <div class="responsive">
+  <div class="gallery">
+      <img src="https://www.travel-palawan.com/wp-content/uploads/2024/09/Barracuda-Lake-coron-Palawan-768x512.jpeg" alt="Cinque Terre" width="600" height="400">
+    <div class="desc">Barracuda Lake</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="https://gttp.images.tshiftcdn.com/358322/x/0/twin-lagon-is-a-top-attraction-included-in-coron-island-hopping-tours-in-palawan.jpg" alt="Forest" width="600" height="400">
+    <div class="desc">Twin Lagoon</div>
+  </div>
+  
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="https://gttp.images.tshiftcdn.com/356978/x/0/aerial-view-of-kayangan-lake.jpg" alt="Northern Lights" width="600" height="400">
+    <div class="desc">Kayangan Lake</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200,h_628/https://philippinesislandhopping.com/wp-content/uploads/2023/12/Malcapuya-Island-0.jpg" alt="Mountains" width="600" height="400">
+    <div class="desc">Malcapuya Island</div>
+  </div>
+</div>
+  <a href="https://www.tripadvisor.com.ph/Tourism-g729733-Coron_Busuanga_Island_Palawan_Province_Mimaropa-Vacations.html"><p>Click for more</p></a>
+  </div>
+</div>
+
+<div class="text">
+  <h2>Welcome to</h2>
+  <h1>CORON !</h1>
+  </div>
+    
+<br>
+<script>
+   let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+
+
+</script>
+</body>
+</html>
+    
+
